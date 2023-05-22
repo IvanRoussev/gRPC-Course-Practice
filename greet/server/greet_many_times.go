@@ -7,6 +7,7 @@ import (
 	pb "github.com/IvanRoussev/grpc-course/greet/proto"
 )
 
+
 func (s *Server) GreetManyTimes(in *pb.GreetRequest, stream pb.GreetService_GreetManyTimesServer) error {
 	log.Printf("GreetManyTimes function was invoked with: %v\n", in)
 
